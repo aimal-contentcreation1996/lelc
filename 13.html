@@ -91,16 +91,16 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav mr-auto">
-                            <li class="ml-3 position-relative">
+                            <li class="ml-lg-3 ml-0 position-relative">
                                 <form action="">
-                                    <img class="position-absolute" src="./assets/img/search.svg" alt="" style="top: 9px; left: 13px;">
+                                    <img class="position-absolute search-icon" src="./assets/img/search.svg" alt="" style="top: 9px; left: 13px;">
                                     <input class="user-search" type="search" placeholder="Search">
                                 </form>
                             </li>
                         </ul>
-                        <ul class="nav navbar-nav ml-auto">
+                        <ul class="nav navbar-nav ml-auto drop-M">
                             <li class="mr-4 pr-2 mt-3">
-                                <div class="dropdown user">
+                                <div class="dropdown user dropdown-1">
                                     <a class="position-relative" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
                                         <img class="user-img" src="./assets/img/notification.svg" alt="" width="25px">
                                         <span class="not-up"><sup>3</sup></span>
@@ -112,7 +112,7 @@
                                 </div>
                             </li>
                             <li class="">
-                                <div class="dropdown user">
+                                <div class="dropdown user dropdown-2">
                                     <a class="" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
                                         <img class="user-img" src="./assets/img/pages-img/Pic.png" alt="" width="100%">
                                     </a>
@@ -259,20 +259,23 @@
                                                         <img class="position-absolute heart" src="./assets/img/heart-2.svg" alt="" width="100px">
                                                         <img src="./assets/img/xd.svg" alt="">
                                                     </div>
-                                                    <div class="p-2">
-                                                        <h6>The Full Adobe XD UI/UX Course</h6>
-                                                        <span class="d-flex mt-3" style="font-size: 13px;"> <img src="./assets/img/stars.svg" class="pr-2" alt="" style="width:100px;">    1,816 review</span>
-                                                        <p class="text-black pt-3" style="font-size: 14px;">Carmen Sanders</p>
-                                                        <p class="text-black boldd" style="font-size: 14px;">23rd Feb 2022</p>
+                                                    <div class="content">
+                                                        <div class="p-2">
+                                                            <h6>The Full Adobe XD UI/UX Course</h6>
+                                                            <span class="d-flex mt-3" style="font-size: 13px;"> <img src="./assets/img/stars.svg" class="pr-2" alt="" style="width:100px;">    1,816 review</span>
+                                                            <p class="text-black pt-3" style="font-size: 14px;">Carmen Sanders</p>
+                                                            <p class="text-black boldd" style="font-size: 14px;">23rd Feb 2022</p>
 
-                                                        <div class="progress position-realtive">
-                                                            <span class="percnt">2%</span>
-                                                            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            <div class="progress position-realtive">
+                                                                <span class="percnt">2%</span>
+                                                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+
                                                         </div>
-
-
+                                                        <button type="submit">Subscribed</button>
                                                     </div>
-                                                    <button>Subscribed</button>
+
+
                                                 </div>
                                             </div>
                                             <div class="swiper-slide d-block text-left pl-3">
@@ -856,24 +859,20 @@
                 el: ".swiper-pagination ",
                 clickable: true,
             },
-            breakpoints: {
-                "@0.00 ": {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                "@0.75 ": {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                "@1.00 ": {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                "@1.50 ": {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-            },
+             breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
         });
     </script>
 

@@ -403,9 +403,10 @@ a:focus {
     width: 35% !important;
 }
 
-.swipper-box-2 .swiper-slide {
+
+/* .swipper-box-2 .swiper-slide {
     width: 28% !important;
-}
+} */
 
 .swipper-box-2 .skill-box button {
     width: 100%;
@@ -417,11 +418,17 @@ a:focus {
     color: #fff;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    z-index: 9999999999999999999999999999999999999;
+    cursor: pointer;
 }
 
 .skill-box {
     border: 2px solid #D00000;
     border-radius: 8px;
+    height: 470px;
+    position: relative;
 }
 
 .skill-box .heart {
@@ -430,6 +437,10 @@ a:focus {
     right: opx;
     right: 5px;
     top: 11px;
+}
+
+.sk-2 {
+    height: 100% !important;
 }
 
 .box7 {
