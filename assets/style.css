@@ -218,7 +218,7 @@ a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30% !important;
+    /* width: 30% !important; */
     margin-right: 10px !important;
 }
 
@@ -408,6 +408,7 @@ a:focus {
     background: #EBEBEB;
     height: 1.1rem;
     border-radius: 20px !important;
+    position: relative;
 }
 
 .percnt {
@@ -415,6 +416,7 @@ a:focus {
     position: absolute;
     font-weight: 500;
     color: #171717;
+    top: 0;
 }
 
 
@@ -430,15 +432,6 @@ a:focus {
     margin-top: 30px;
     height: auto;
 }
-
-.swipper-box-2 .swiper-slide {
-    width: 35% !important;
-}
-
-
-/* .swipper-box-2 .swiper-slide {
-    width: 28% !important;
-} */
 
 .swipper-box-2 .skill-box button {
     width: 100%;

@@ -278,7 +278,7 @@
 
 /* 500 */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500.5px) {
     .login-box {
         width: 100% !important;
     }
@@ -294,6 +294,9 @@
     .box-height {
         height: 330px !important;
     }
+    .skill-box {
+        height: 575px;
+    }
 }
 
 
@@ -308,5 +311,8 @@
     }
     .box3 {
         padding: 35px 0px !important;
+    }
+    .skill-box {
+        height: 500px;
     }
 }
